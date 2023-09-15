@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{789CD637-3343-413E-80C1-8246219C9676}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Back", "Back", "{EC6477A8-B715-4A82-9EC2-2FE30C1057CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.API", "backend\Desafio.API\Desafio.API.csproj", "{6F8B51C2-807E-4038-B94D-027E87B09582}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.API.Application", "backend\Desafio.API.Application\Desafio.API.Application.csproj", "{ECDFCA94-CA02-40DC-B9B7-28343E110648}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.API.Domain", "backend\Desafio.API.Domain\Desafio.API.Domain.csproj", "{0957C8ED-1E9E-402D-8769-7446370FB441}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.API.Tests", "backend\Desafio.API.Tests\Desafio.API.Tests.csproj", "{E3A693CF-A910-4780-AC31-204E61975B68}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Desafio", "frontend\Desafio\", "{A0BC59E0-B4CE-4B0B-A66E-9086AB00705E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53027"
+		Debug.AspNetCompiler.PhysicalPath = "frontend\Desafio\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53027\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53027"
+		Release.AspNetCompiler.PhysicalPath = "frontend\Desafio\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53027\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53027"
+		SlnRelativePath = "frontend\Desafio\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.API.Domain.Tests", "backend\Desafio.API.Domain.Tests\Desafio.API.Domain.Tests.csproj", "{A83FE9E6-1DDF-4586-9FD3-D8D60CD1C751}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.API.Application.Tests", "backend\Desafio.API.Application.Tests\Desafio.API.Application.Tests.csproj", "{289CD3F1-5F27-4F30-B9FD-B87203C5126C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F8B51C2-807E-4038-B94D-027E87B09582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8B51C2-807E-4038-B94D-027E87B09582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8B51C2-807E-4038-B94D-027E87B09582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8B51C2-807E-4038-B94D-027E87B09582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDFCA94-CA02-40DC-B9B7-28343E110648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDFCA94-CA02-40DC-B9B7-28343E110648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDFCA94-CA02-40DC-B9B7-28343E110648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDFCA94-CA02-40DC-B9B7-28343E110648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0957C8ED-1E9E-402D-8769-7446370FB441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0957C8ED-1E9E-402D-8769-7446370FB441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0957C8ED-1E9E-402D-8769-7446370FB441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0957C8ED-1E9E-402D-8769-7446370FB441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A693CF-A910-4780-AC31-204E61975B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A693CF-A910-4780-AC31-204E61975B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A693CF-A910-4780-AC31-204E61975B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A693CF-A910-4780-AC31-204E61975B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0BC59E0-B4CE-4B0B-A66E-9086AB00705E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BC59E0-B4CE-4B0B-A66E-9086AB00705E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0BC59E0-B4CE-4B0B-A66E-9086AB00705E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BC59E0-B4CE-4B0B-A66E-9086AB00705E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A83FE9E6-1DDF-4586-9FD3-D8D60CD1C751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83FE9E6-1DDF-4586-9FD3-D8D60CD1C751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83FE9E6-1DDF-4586-9FD3-D8D60CD1C751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83FE9E6-1DDF-4586-9FD3-D8D60CD1C751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289CD3F1-5F27-4F30-B9FD-B87203C5126C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289CD3F1-5F27-4F30-B9FD-B87203C5126C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289CD3F1-5F27-4F30-B9FD-B87203C5126C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289CD3F1-5F27-4F30-B9FD-B87203C5126C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F8B51C2-807E-4038-B94D-027E87B09582} = {EC6477A8-B715-4A82-9EC2-2FE30C1057CE}
+		{ECDFCA94-CA02-40DC-B9B7-28343E110648} = {EC6477A8-B715-4A82-9EC2-2FE30C1057CE}
+		{0957C8ED-1E9E-402D-8769-7446370FB441} = {EC6477A8-B715-4A82-9EC2-2FE30C1057CE}
+		{E3A693CF-A910-4780-AC31-204E61975B68} = {EC6477A8-B715-4A82-9EC2-2FE30C1057CE}
+		{A0BC59E0-B4CE-4B0B-A66E-9086AB00705E} = {789CD637-3343-413E-80C1-8246219C9676}
+		{A83FE9E6-1DDF-4586-9FD3-D8D60CD1C751} = {EC6477A8-B715-4A82-9EC2-2FE30C1057CE}
+		{289CD3F1-5F27-4F30-B9FD-B87203C5126C} = {EC6477A8-B715-4A82-9EC2-2FE30C1057CE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32F56A11-233E-40C5-8C0C-274023CB4FE6}
+	EndGlobalSection
+EndGlobal

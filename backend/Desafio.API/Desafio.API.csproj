@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>8e47a499-2e80-4efe-afd4-646640f72aab</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Desafio.API.Domain\Desafio.API.Domain.csproj" />
+    <ProjectReference Include="..\Desafio.API.Application\Desafio.API.Application.csproj" />
+  </ItemGroup>
+
+
+</Project>
