@@ -1,0 +1,64 @@
+<div class="row h-100 justify-content-center align-items-center">
+  <div class="col-10 col-md-8 col-lg-6">
+    <header class="d-flex align-items-center p-3 my-3 bg-secondary rounded shadow-sm">
+      <em class="fa-solid fa-money-bill-trend-up fa-3x"></em>
+      <div class="lh-1 ms-3">
+        <h2 class="h2 mb-0 lh-1">Simule o seu investimento</h2>
+        <small>Informe o valor a ser aplicado e o prazo em meses</small>
+      </div>
+    </header>
+    <main class="card my-3">
+      <div class="card-body">
+        <form [formGroup]="form">
+          <div class="row">
+            <div class="form-group col-12 col-md-6">
+              <label for="valor">Valor</label>
+              <input type="text" name="valor" formControlName="valor" class="form-control text-end" autofocus
+                [ngClass]="cssValidator(f.valor)">
+              <div class="invalid-feedback" *ngIf="f.valor.touched && f.valor.errors?.required">É obrigatório</div>
+              <div class="invalid-feedback" *ngIf="f.valor.touched && f.valor.errors?.min">Informe um valor maior do que zero.
+              </div>
+              <div class="invalid-feedback" *ngIf="f.valor.touched && f.prazo.errors?.max">Valor máximo é R$
+                999.999.999.999,99</div>
+            </div>
+            <div class="form-group col-12 col-md-6">
+              <label for="prazo">Prazo (em meses)</label>
+              <input type="text" name="prazo" formControlName="prazo" class="form-control text-end"
+                [ngClass]="cssValidator(f.prazo)">
+              <div class="invalid-feedback" *ngIf="f.prazo.touched && f.prazo.errors?.required">É obrigatório</div>
+              <div class="invalid-feedback" *ngIf="f.prazo.touched && f.prazo.errors?.min">O prazo mínimo são 2 meses
+              </div>
+              <div class="invalid-feedback" *ngIf="f.prazo.touched && f.prazo.errors?.max">O prazo máximo são 120 meses
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer d-flex flex-wrap justify-content-between py-2">
+        <div class="col-12 col-md-5">
+          <button type="button" class="btn btn-success w-100" [disabled]="!form.valid || enviandoDados"
+          (click)="enviaDados()"><em class="fa fa-calculator me-2"></em>Simular</button>
+        </div>
+        <div class="col-12 col-md-5 mt-3 mt-md-0">
+          <button type="button" class="btn btn-outline-danger w-100" (click)="limpaDadosGeral()"><em
+            class="fa fa-eraser me-2"></em>Limpar dados</button>
+        </div>
+      </div>
+    </main>
+    <div class="alert alert-danger" role="alert" *ngIf="erroEnvio">
+      Ocorreu um erro ao simular esse investimento.
+    </div>
+    <div class="card" *ngIf="!erroEnvio">
+      <div class="card-header py-3">
+        <h5 class="my-0 fw-normal">Resultado da simulação</h5>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li><span class="text-bold">Valor bruto: </span>{{ retornoSimulacao.valor_bruto | currency : 'BRL' }}</li>
+          <li><span class="text-bold">Valor líquido: </span>{{ retornoSimulacao.valor_liquido | currency : 'BRL' }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
