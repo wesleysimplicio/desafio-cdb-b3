@@ -1,0 +1,21 @@
+version: "3"
+services: 
+    proxy:
+        build: 
+            context: ./Proxy
+            dockerfile: Dockerfile
+        ports: 
+            - "80:80"
+        restart: always
+    web:
+        build:
+            context: ./frontend/desafio
+            dockerfile: Dockerfile
+        ports: 
+            - "4200:80"
+    api:
+        build: 
+            context: ./backend
+            dockerfile: Dockerfile
+        ports: 
+            - "5001:80"
